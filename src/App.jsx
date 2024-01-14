@@ -1,13 +1,11 @@
 import './App.css'
 import Content from './Components/Content'
 
-function App() {
-  
+function App() { 
   return (
     <>
       <Content/>
     </>
   )
 }
-
 export default App

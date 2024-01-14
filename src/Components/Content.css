@@ -5,6 +5,7 @@
 .shadowMob {
     margin-top: -100px;
     margin-left:32px ;
+    z-index: 0;
 }
 .Faq {
     color: #1E1F36;
@@ -45,7 +46,7 @@
     margin-top: 10px;
     margin-left: 25px;
 }
-#content {
+.content {
     margin-left: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -59,13 +60,53 @@
     line-height: 18px;
     display: none;
 }
+.content.show {
+    display: block;
+}
 .arrowImg {
     position: absolute;
     margin-left: 290px;
     margin-top: -12px;
     cursor: pointer;
 }
-.rotate {
+.arrowImg.rotate {
     rotate: 180deg;
     transition: 1s;
+}
+
+@media (width>1200px){
+    .accordion {
+        margin-left: 450px;
+    }
+    .Faq{
+        margin-left: 475px;
+        margin-top: -300px;
+    }
+    .mobImge {
+        margin-left: -90px;
+        margin-top: 90px;
+        width: 470px;
+        height: 277.972px;
+        z-index: 2;
+    }
+    .shadowMob {
+        position: absolute;
+        z-index: 0;
+        width: 364px;
+        height: 268px;
+        margin-left: -400px;
+        margin-top: 200px;
+    }
+    #tittle{
+       font-size: 15px;
+    }
+    .content{
+       font-size: 15px;
+    }
+    .arrowImg {
+        margin-left: 355px;
+    }
+    .underLine {
+        width: 350px;
+    }
 }
